@@ -7,8 +7,9 @@ requirements: mpv
 
 
 ## TODO
+* create file structure
 * finish rofi
 * add downloads and subtitles
 * make a config file for choosing between term or rofi
 * implement vlc paramater or add vlc option in config
-* (ps i dont know how to do the last 2) 
+* (p.s. i dont know how to do the last 2) 
