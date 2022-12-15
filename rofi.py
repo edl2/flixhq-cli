@@ -27,13 +27,12 @@ else:
     last_season = max(episode['season'] for episode in data['episodes'])
     selected_season = int(subprocess.run(["rofi", "-dmenu", "-p", f"Choose season 1-{last_season}: "], capture_output=True).stdout.strip().decode())
     selected_episodes = [episode for episode in data['episodes'] if episode['season'] == selected_season]
-
-    for episode in selected_episodes:
-        print(episode['title'])
-
-    selected_episode_number = int(input("Choose episode"))
-
+    options = "\n".join([episode["title"] for episode in selected_episodes]).encode()
+    selected_title = subprocess.run(["rofi", "-dmenu", "-p", "Please select an episode"], input=options, capture_output=True).stdout.strip().decode()
+    selected_index = next(i for i, episode in enumerate(selected_episodes) if episode["title"] == selected_title)
+    selected_episode_number = selected_episodes[selected_index]['number']
     selected_episode_id = {episode['number']: episode['id'] for episode in selected_episodes}
+
 
     if selected_episode_number in selected_episode_id:
         episode_id = selected_episode_id[selected_episode_number]
