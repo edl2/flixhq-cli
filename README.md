@@ -10,6 +10,5 @@ requirements: mpv
 - [ ] create file structure
 - [x] finish rofi
 - [ ] add downloads and subtitles
-- [ ] make a config file for choosing between term or rofi
+- [x] implemented -rofi paramater 
 - [ ] implement vlc paramater or add vlc option in config
-- [ ] (p.s. i dont know how to do the last 2) 
