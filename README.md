@@ -1,10 +1,10 @@
 # flixhq-cli
-python script that pulls links from flixhq (sflix) and plays them in mpv. (Uses consumetAPI)
+python script to stream movies and tv-shows. terminal or rofi selection methods. use -rofi to use rofi. 
 
+will be created into an installible pip package but for now is just a script. 
 
 requirements: mpv
-
-
+optional but highly suggested: rofi
 
 ## TODO
 - [ ] create file structure
