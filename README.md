@@ -4,6 +4,7 @@ python script to stream movies and tv-shows. terminal or rofi selection methods.
 will be created into an installible pip package but for now is just a script. 
 
 requirements: mpv
+
 optional but highly suggested: rofi
 
 ## TODO
