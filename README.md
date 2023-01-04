@@ -1,8 +1,8 @@
 # flixhq-cli
 python script to stream movies and tv-shows. terminal or rofi selection methods. use -rofi to use rofi. 
 
-will be created into an installible pip package but for now is just a script. 
-
+will be created into an installible pip package but for now is just do this for example:
+git clone https://github.com/edl2/flixhq-cli && echo "alias fli-cli="python /flixhq-cli/main.py" > .zshrc && source .zshrc
 requirements: mpv
 
 optional but highly suggested: rofi
