@@ -10,7 +10,7 @@ optional but highly suggested: rofi
 ## TODO
 - [ ] create file structure
 - [x] finish rofi
-- [ ] add downloads and subtitles
+- [x] add downloads and subtitles
 - [ ] error handling/next episode stuff
 - [x] implemented -rofi paramater 
 - [ ] implement vlc paramater or add vlc option in config
